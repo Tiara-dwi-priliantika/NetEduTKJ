@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi - NetEdu TKJ</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <i data-lucide="network" class="logo-icon"></i>
+                <div class="logo-text">
+                    <span class="brand-name">NetEdu TKJ</span>
+                    <span class="sub-brand">Pembelajaran Interaktif</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> Home</a>
+                <a href="materi.html" class="nav-link active"><i data-lucide="book-open"></i> Materi</a>
+                <a href="quiz.html" class="nav-link"><i data-lucide="clipboard-check"></i> Quiz</a>
+                <a href="tentang.html" class="nav-link"><i data-lucide="info"></i> Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container content-wrapper">
+        
+        <div class="breadcrumb">
+            <a href="index.html" class="back-link">
+                <i data-lucide="arrow-left"></i> Kembali ke Home
+            </a>
+        </div>
+
+        <section class="title-section">
+            <h1 class="page-title">Materi</h1>
+            <p class="page-subtitle">Pilih perangkat atau media jaringan yang ingin dipelajari.</p>
+        </section>
+
+        <section class="materi-grid-container">
+            
+            <div class="materi-page active" id="page-1">
+                <div class="materi-grid">
+                    <div class="materi-card" onclick="location.href='detail-router.html'">
+                        <div class="img-container">
+                            <img src="asset/router.png" alt="Router">
+                        </div>
+                        <h3>Router</h3>
+                    </div>
+
+                    <div class="materi-card" onclick="location.href='detail-switch.html'">
+                        <div class="img-container">
+                            <img src="asset/switch.png" alt="Switch">
+                        </div>
+                        <h3>Switch</h3>
+                    </div>
+
+                    <div class="materi-card" onclick="location.href='detail-hub.html'">
+                        <div class="img-container">
+                            <img src="asset/hub.png" alt="Hub">
+                        </div>
+                        <h3>Hub</h3>
+                    </div>
+
+                    <div class="materi-card" onclick="location.href='detail-ap.html'">
+                        <div class="img-container">
+                            <img src="asset/ap.png" alt="Access Point">
+                        </div>
+                        <h3>Access Point</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="materi-page" id="page-2">
+                <div class="materi-grid">
+                    <div class="materi-card" onclick="location.href='detail-modem.html'">
+                        <div class="img-container">
+                            <img src="asset/modem.png" alt="Modem">
+                        </div>
+                        <h3>Modem</h3>
+                    </div>
+
+                    <div class="materi-card" onclick="location.href='detail-repeater.html'">
+                        <div class="img-container">
+                            <img src="asset/repeater.png" alt="Repeater">
+                        </div>
+                        <h3>Repeater</h3>
+                    </div>
+
+                    <div class="materi-card" onclick="location.href='detail-bridge.html'">
+                        <div class="img-container">
+                            <img src="asset/bridge.png" alt="Bridge">
+                        </div>
+                        <h3>Bridge</h3>
+                    </div>
+
+                    <div class="materi-card" onclick="location.href='detail-nic.html'">
+                        <div class="img-container">
+                            <img src="asset/nic.png" alt="NIC">
+                        </div>
+                        <h3>NIC Card</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="materi-page" id="page-3">
+                <div class="materi-grid">
+                    <div class="materi-card" onclick="location.href='detail-utp.html'">
+                        <div class="img-container">
+                            <img src="asset/utp.png" alt="Kabel UTP">
+                        </div>
+                        <h3>Kabel UTP</h3>
+                    </div>
+
+                    <div class="materi-card" onclick="location.href='detail-stp.html'">
+                        <div class="img-container">
+                            <img src="asset/stp.png" alt="Kabel STP">
+                        </div>
+                        <h3>Kabel STP</h3>
+                    </div>
+
+                    <div class="materi-card" onclick="location.href='detail-fo.html'">
+                        <div class="img-container">
+                            <img src="asset/fiber.png" alt="Kabel Fiber Optic">
+                        </div>
+                        <h3>Kabel Fiber Optic</h3>
+                    </div>
+
+                    <div class="materi-card" onclick="location.href='detail-firewall.html'">
+                        <div class="img-container">
+                            <img src="asset/firewall.png" alt="Firewall">
+                        </div>
+                        <h3>Firewall</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="pagination">
+            <button class="page-btn active" onclick="changePage(1)">1</button>
+            <button class="page-btn" onclick="changePage(2)">2</button>
+            <button class="page-btn" onclick="changePage(3)">3</button>
+            <button class="page-btn next" onclick="nextPage()"><i data-lucide="chevron-right"></i></button>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+       <div class="container">
+            <p>&copy; 2026 NetEdu TKJ | Media Pembelajaran Interaktif</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

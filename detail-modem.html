@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Materi - Modem</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <i data-lucide="network" class="logo-icon"></i>
+                <div class="logo-text">
+                    <span class="brand-name">NetEdu TKJ</span>
+                    <span class="sub-brand">Pembelajaran Interaktif</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> Home</a>
+                <a href="materi.html" class="nav-link active"><i data-lucide="book-open"></i> Materi</a>
+                <a href="quiz.html" class="nav-link"><i data-lucide="clipboard-check"></i> Quiz</a>
+                <a href="tentang.html" class="nav-link"><i data-lucide="info"></i> Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container detail-layout-wrapper">
+        
+        <div class="breadcrumb-detail">
+            <a href="materi.html" class="back-link">
+                <i data-lucide="arrow-left"></i> Kembali ke Daftar Materi
+            </a>
+        </div>
+
+        <div class="detail-dashboard">
+            
+            <aside class="detail-sidebar">
+                <button class="tab-btn active" onclick="openTab(event, 'pengertian')">Pengertian</button>
+                <button class="tab-btn" onclick="openTab(event, 'spesifikasi')">Spesifikasi</button>
+                <button class="tab-btn" onclick="openTab(event, 'keunggulan')">Keunggulan</button>
+                <button class="tab-btn" onclick="openTab(event, 'aplikasi')">Aplikasi</button>
+                <button class="tab-btn" onclick="openTab(event, 'sumber')">Sumber</button>
+            </aside>
+
+            <section class="detail-content-box">
+                
+                <div class="detail-image-header">
+                    <img src="asset/modem.png" alt="Modem">
+                    <h1 class="device-title">Modem</h1>
+                </div>
+
+                <hr class="divider">
+
+                <div id="pengertian" class="tab-content active">
+                    <h3>Pengertian Modem</h3>
+                    <p>Modem singkatan dari <strong>Modulator Demodulator</strong>. Perangkat ini adalah gerbang utama yang mengubah sinyal digital dari komputer menjadi sinyal analog agar bisa dikirim melalui media transmisi (seperti kabel telepon atau serat optik), dan sebaliknya.</p>
+                    <p>Modem bekerja pada Layer 2 (Data Link Layer) dan Layer 1 (Physical Layer) dalam model OSI. Fungsi utamanya adalah menghubungkan jaringan lokal rumah atau sekolah ke jaringan berskala luas (WAN) milik penyedia layanan internet (ISP).</p>
+                </div>
+
+                <div id="spesifikasi" class="tab-content">
+                    <h3>Spesifikasi Umum</h3>
+                    <ul>
+                        <li>Menggunakan tipe koneksi media input: Port DSL (kabel telepon) atau Port PON/Optik (kabel Fiber Optic).</li>
+                        <li>Memiliki port output: Minimal 1 Port Ethernet (LAN) untuk disambungkan ke Router atau komputer.</li>
+                        <li>Sering kali berupa Modem ONT (Optical Network Terminal) pada infrastruktur FTTH (Fiber to the Home).</li>
+                        <li>Mendukung modulasi standar kecepatan tinggi dari ISP untuk kestabilan transmisi data.</li>
+                    </ul>
+                </div>
+
+                <div id="keunggulan" class="tab-content">
+                    <h3>Keunggulan Modem</h3>
+                    <ul>
+                        <li><strong>Akses Internet Global:</strong> Menjadi jembatan mutlak agar jaringan lokal (LAN) dapat berkomunikasi dengan dunia luar (Internet).</li>
+                        <li><strong>Kompatibilitas Sinyal:</strong> Mengatasi perbedaan teknologi transmisi sinyal analog dari infrastruktur publik dengan komputer digital.</li>
+                        <li><strong>Integrasi Modern:</strong> Perangkat modem saat ini banyak yang sudah bertipe 3-in-1 (Modem + Router + Access Point) untuk kepraktisan penggunaan di rumah.</li>
+                    </ul>
+                </div>
+
+                <div id="aplikasi" class="tab-content">
+                    <h3>Aplikasi / Implementasi Lapangan</h3>
+                    <p>Dalam dunia Teknik Komputer dan Jaringan, instalasi modem diaplikasikan untuk:</p>
+                    <ul>
+                        <li>Titik demarkasi masuknya layanan internet dari provider (seperti Indihome, Biznet, Telkomsel) di rumah, kantor, atau lab sekolah.</li>
+                        <li>Mengonversi sinyal optik dari kabel tanah/tiang menjadi sinyal Ethernet di ruangan server sekolah sebelum disebarkan ke Switch utama.</li>
+                    </ul>
+                </div>
+
+                <div id="sumber" class="tab-content">
+                    <h3>Sumber Materi</h3>
+                    <p>Materi pembelajaran Modem ini disusun berdasarkan referensi kurikulum infrastruktur WAN:</p>
+                    <ul>
+                        <li>Buku Teknologi Jaringan Berbasis Luas (WAN) Kelas XI SMK TKJ.</li>
+                        <li>Panduan Teknis Instalasi perangkat FTTH (Fiber To The Home) tingkat dasar.</li>
+                    </ul>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

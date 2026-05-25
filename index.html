@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetEdu TKJ - Pembelajaran Interaktif</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <i data-lucide="network" class="logo-icon"></i>
+                <div class="logo-text">
+                    <span class="brand-name">NetEdu TKJ</span>
+                    <span class="sub-brand">Pembelajaran Interaktif</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active"><i data-lucide="home"></i> Home</a>
+                <a href="materi.html" class="nav-link"><i data-lucide="book-open"></i> Materi</a>
+                <a href="quiz.html" class="nav-link"><i data-lucide="clipboard-check"></i> Quiz</a>
+                <a href="tentang.html" class="nav-link"><i data-lucide="info"></i> Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Selamat Datang di <span class="highlight">NetEdu TKJ</span></h1>
+                <p>
+                    Media pembelajaran interaktif untuk mengenal perangkat jaringan komputer 
+                    secara mudah, menyenangkan, dan interaktif.
+                </p>
+                <div class="hero-cta">
+                    <a href="materi.html" class="btn btn-blue">Pelajari Sekarang</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="50" y="250" width="120" height="40" rx="5" fill="#333" /> <circle cx="70" cy="270" r="3" fill="#4ade80" /> 
+                    <rect x="200" y="100" width="220" height="150" rx="10" fill="#2563eb" /> <rect x="180" y="250" width="260" height="15" rx="5" fill="#94a3b8" />
+                    <circle cx="310" cy="175" r="40" fill="white" opacity="0.2" />
+                    <path d="M290 175 A 20 20 0 0 1 330 175" stroke="white" fill="none" stroke-width="3"/> <rect x="350" y="280" width="100" height="60" rx="5" fill="#1d4ed8" /> <rect x="360" y="310" width="10" height="10" fill="#fff" opacity="0.5"/>
+                    <rect x="380" y="310" width="10" height="10" fill="#fff" opacity="0.5"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container cards-grid">
+            <div class="card">
+                <div class="icon-circle bg-blue-light">
+                    <i data-lucide="book-open" class="text-blue"></i>
+                </div>
+                <h3>Materi</h3>
+                <p>Pelajari berbagai perangkat jaringan komputer lengkap dengan penjelasannya.</p>
+                <a href="materi.html" class="btn btn-blue">Mulai Belajar</a>
+            </div>
+
+            <div class="card">
+                <div class="icon-circle bg-green-light">
+                    <i data-lucide="check-square" class="text-green"></i>
+                </div>
+                <h3>Quiz</h3>
+                <p>Uji pemahamanmu dengan mengerjakan quiz interaktif yang menarik.</p>
+                <a href="quiz.html" class="btn btn-green">Mulai Quiz</a>
+            </div>
+
+            <div class="card">
+                <div class="icon-circle bg-purple-light">
+                    <i data-lucide="help-circle" class="text-purple"></i>
+                </div>
+                <h3>Tentang</h3>
+                <p>Informasi tentang aplikasi NetEdu TKJ dan pembuat aplikasi.</p>
+                <a href="tentang.html" class="btn btn-purple">Lihat Informasi</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 NetEdu TKJ | Media Pembelajaran Interaktif</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Materi - Fiber Optic</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <i data-lucide="network" class="logo-icon"></i>
+                <div class="logo-text">
+                    <span class="brand-name">NetEdu TKJ</span>
+                    <span class="sub-brand">Pembelajaran Interaktif</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> Home</a>
+                <a href="materi.html" class="nav-link active"><i data-lucide="book-open"></i> Materi</a>
+                <a href="quiz.html" class="nav-link"><i data-lucide="clipboard-check"></i> Quiz</a>
+                <a href="tentang.html" class="nav-link"><i data-lucide="info"></i> Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container detail-layout-wrapper">
+        
+        <div class="breadcrumb-detail">
+            <a href="materi.html" class="back-link">
+                <i data-lucide="arrow-left"></i> Kembali ke Daftar Materi
+            </a>
+        </div>
+
+        <div class="detail-dashboard">
+            
+            <aside class="detail-sidebar">
+                <button class="tab-btn active" onclick="openTab(event, 'pengertian')">Pengertian</button>
+                <button class="tab-btn" onclick="openTab(event, 'spesifikasi')">Spesifikasi</button>
+                <button class="tab-btn" onclick="openTab(event, 'keunggulan')">Keunggulan</button>
+                <button class="tab-btn" onclick="openTab(event, 'aplikasi')">Aplikasi</button>
+                <button class="tab-btn" onclick="openTab(event, 'sumber')">Sumber</button>
+            </aside>
+
+            <section class="detail-content-box">
+                
+                <div class="detail-image-header">
+                    <img src="asset/fiber.png" alt="Kabel Fiber Optic">
+                    <h1 class="device-title">Fiber Optic</h1>
+                </div>
+
+                <hr class="divider">
+
+                <div id="pengertian" class="tab-content active">
+                    <h3>Pengertian Kabel Fiber Optic</h3>
+                    <p>Kabel Fiber Optic (Serat Optik) adalah media transmisi tingkat lanjut yang terbuat dari serat kaca atau plastik yang sangat halus, bahkan lebih tipis dari sehelai rambut manusia.</p>
+                    <p>Bekerja pada Layer 1 (Physical Layer) model OSI. Berbeda total dengan kabel tembaga yang mengirimkan pulsa listrik, kabel ini mentransmisikan data digital dalam bentuk berkas cahaya (pulsa sinar) berkecepatan tinggi yang dihasilkan dari sinar Laser atau LED.</p>
+                </div>
+
+                <div id="spesifikasi" class="tab-content">
+                    <h3>Spesifikasi Umum</h3>
+                    <ul>
+                        <li>Terbagi menjadi dua tipe utama: Single-mode (jarak sangat jauh, inti kaca kecil) dan Multi-mode (jarak menengah, inti kaca lebih besar).</li>
+                        <li>Menggunakan tipe konektor khusus jaringan, seperti konektor tipe SC, LC, ST, atau FC.</li>
+                        <li>Mampu mentransmisikan data dengan kecepatan luar biasa mencapai ratusan Gigabyte per detik (Gbps).</li>
+                        <li>Jangkauan jarak tanpa penguat sinyal sangat jauh, bisa menempuh puluhan hingga ratusan kilometer.</li>
+                    </ul>
+                </div>
+
+                <div id="keunggulan" class="tab-content">
+                    <h3>Keunggulan Fiber Optic</h3>
+                    <ul>
+                        <li><strong>Kecepatan Cahaya:</strong> Kecepatan transfer data paling tinggi dibandingkan semua media transmisi kabel lainnya.</li>
+                        <li><strong>Kebal Gangguan:</strong> Murni terbuat dari kaca, menjadikannya 100% kebal terhadap korosi karat dan bebas dari segala bentuk interferensi gelombang listrik/petir.</li>
+                        <li><strong>Keamanan Data Tinggi:</strong> Sangat sulit untuk disadap secara fisik tanpa merusak struktur inti inti kabel kaca itu sendiri.</li>
+                    </ul>
+                </div>
+
+                <div id="aplikasi" class="tab-content">
+                    <h3>Aplikasi / Implementasi Lapangan</h3>
+                    <p>Dalam kurikulum TKJ dan industri komunikasi modern, Fiber Optic diimplementasikan untuk:</p>
+                    <ul>
+                        <li>Jalur tulang punggung (Backbone) utama yang menghubungkan antar-gedung instansi besar atau antarpulau dunia di bawah laut.</li>
+                        <li>Saluran layanan internet rumahan berkecepatan tinggi berbasis arsitektur FTTH (Fiber to the Home).</li>
+                    </ul>
+                </div>
+
+                <div id="sumber" class="tab-content">
+                    <h3>Sumber Materi</h3>
+                    <ul>
+                        <li>Buku Pilihan Kompetensi Keahlian TKJ - Instalasi Serat Optik Kelas XII SMK.</li>
+                        <li>Modul Pelatihan Teknisi Penyambungan (Splicing) Kabel Fiber Optic Indonesia.</li>
+                    </ul>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

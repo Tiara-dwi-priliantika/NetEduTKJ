@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Materi - Hub</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <i data-lucide="network" class="logo-icon"></i>
+                <div class="logo-text">
+                    <span class="brand-name">NetEdu TKJ</span>
+                    <span class="sub-brand">Pembelajaran Interaktif</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> Home</a>
+                <a href="materi.html" class="nav-link active"><i data-lucide="book-open"></i> Materi</a>
+                <a href="quiz.html" class="nav-link"><i data-lucide="clipboard-check"></i> Quiz</a>
+                <a href="tentang.html" class="nav-link"><i data-lucide="info"></i> Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container detail-layout-wrapper">
+        
+        <div class="breadcrumb-detail">
+            <a href="materi.html" class="back-link">
+                <i data-lucide="arrow-left"></i> Kembali ke Daftar Materi
+            </a>
+        </div>
+
+        <div class="detail-dashboard">
+            
+            <aside class="detail-sidebar">
+                <button class="tab-btn active" onclick="openTab(event, 'pengertian')">Pengertian</button>
+                <button class="tab-btn" onclick="openTab(event, 'spesifikasi')">Spesifikasi</button>
+                <button class="tab-btn" onclick="openTab(event, 'keunggulan')">Keunggulan</button>
+                <button class="tab-btn" onclick="openTab(event, 'aplikasi')">Aplikasi</button>
+                <button class="tab-btn" onclick="openTab(event, 'sumber')">Sumber</button>
+            </aside>
+
+            <section class="detail-content-box">
+                
+                <div class="detail-image-header">
+                    <img src="asset/hub.png" alt="Hub">
+                    <h1 class="device-title">Hub</h1>
+                </div>
+
+                <hr class="divider">
+
+                <div id="pengertian" class="tab-content active">
+                    <h3>Pengertian Hub</h3>
+                    <p>Hub (atau sering disebut Network Hub) adalah perangkat jaringan paling sederhana yang berfungsi untuk menghubungkan beberapa komputer atau perangkat dalam suatu jaringan area lokal (LAN).</p>
+                    <p>Berbeda dengan Switch, Hub adalah perangkat non-cerdas (dumb device) yang bekerja pada Layer 1 (Physical Layer). Hub tidak dapat membaca alamat MAC, sehingga setiap data yang masuk dari satu port akan langsung disiarkan (broadcast) ke seluruh port lainnya secara bersamaan, terlepas dari perangkat mana yang sebenarnya dituju.</p>
+                </div>
+
+                <div id="spesifikasi" class="tab-content">
+                    <h3>Spesifikasi Umum</h3>
+                    <ul>
+                        <li>Memiliki jumlah port standar: umumnya 4, 8, hingga 16 Port RJ45.</li>
+                        <li>Kecepatan transfer data terbatas: umumnya hanya 10 Mbps hingga Fast Ethernet (100 Mbps) dibagi ke seluruh port yang aktif.</li>
+                        <li>Menggunakan metode komunikasi Half-Duplex (perangkat tidak bisa mengirim dan menerima data pada saat yang bersamaan).</li>
+                        <li>Bekerja dalam satu domain tabrakan data tunggal (Single Collision Domain).</li>
+                    </ul>
+                </div>
+
+                <div id="keunggulan" class="tab-content">
+                    <h3>Kekurangan & Keunggulan Hub</h3>
+                    <p><strong>Keunggulan:</strong></p>
+                    <ul>
+                        <li><strong>Harga Sangat Ekonomis:</strong> Jauh lebih murah dibandingkan Switch atau Router karena komponen internalnya sangat sederhana.</li>
+                        <li><strong>Kemudahan Penggunaan:</strong> Bersifat murni Plug and Play, tidak memerlukan konfigurasi atau software apapun untuk mulai bekerja.</li>
+                    </ul>
+                    <p><strong>Kekurangan Utama:</strong></p>
+                    <ul>
+                        <li>Sering terjadi tabrakan data (collision) jika banyak perangkat mengirim data bersamaan.</li>
+                        <li>Keamanan sangat rendah karena seluruh komputer bisa menerima paket data milik komputer lain.</li>
+                    </ul>
+                </div>
+
+                <div id="aplikasi" class="tab-content">
+                    <h3>Aplikasi / Implementasi Lapangan</h3>
+                    <p>Di era modern saat ini, penggunaan Hub sudah mulai digantikan oleh Switch. Namun, Hub terkadang masih diterapkan untuk:</p>
+                    <ul>
+                        <li>Membuat jaringan lokal berskala sangat kecil di rumah atau ruang laboratorium kecil dengan anggaran terbatas.</li>
+                        <li>Digunakan oleh administrator jaringan untuk melakukan Network Monitoring atau analisis paket data (packet sniffing) menggunakan software seperti Wireshark, karena Hub menyebarkan seluruh data ke setiap port.</li>
+                    </ul>
+                </div>
+
+                <div id="sumber" class="tab-content">
+                    <h3>Sumber Materi</h3>
+                    <p>Materi pembelajaran Hub ini disusun berdasarkan referensi teknologi jaringan SMK TKJ:</p>
+                    <ul>
+                        <li>Buku Teks Kompetensi Keahlian TKJ - Kurikulum 2013 / Kurikulum Merdeka.</li>
+                        <li>Modul Dasar Arsitektur Perangkat Jaringan Komputer Lokal (LAN).</li>
+                    </ul>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

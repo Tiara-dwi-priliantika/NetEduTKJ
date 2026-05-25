@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Materi - Kabel UTP</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <i data-lucide="network" class="logo-icon"></i>
+                <div class="logo-text">
+                    <span class="brand-name">NetEdu TKJ</span>
+                    <span class="sub-brand">Pembelajaran Interaktif</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> Home</a>
+                <a href="materi.html" class="nav-link active"><i data-lucide="book-open"></i> Materi</a>
+                <a href="quiz.html" class="nav-link"><i data-lucide="clipboard-check"></i> Quiz</a>
+                <a href="tentang.html" class="nav-link"><i data-lucide="info"></i> Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container detail-layout-wrapper">
+        
+        <div class="breadcrumb-detail">
+            <a href="materi.html" class="back-link">
+                <i data-lucide="arrow-left"></i> Kembali ke Daftar Materi
+            </a>
+        </div>
+
+        <div class="detail-dashboard">
+            
+            <aside class="detail-sidebar">
+                <button class="tab-btn active" onclick="openTab(event, 'pengertian')">Pengertian</button>
+                <button class="tab-btn" onclick="openTab(event, 'spesifikasi')">Spesifikasi</button>
+                <button class="tab-btn" onclick="openTab(event, 'keunggulan')">Keunggulan</button>
+                <button class="tab-btn" onclick="openTab(event, 'aplikasi')">Aplikasi</button>
+                <button class="tab-btn" onclick="openTab(event, 'sumber')">Sumber</button>
+            </aside>
+
+            <section class="detail-content-box">
+                
+                <div class="detail-image-header">
+                    <img src="asset/utp.png" alt="Kabel UTP">
+                    <h1 class="device-title">Kabel UTP</h1>
+                </div>
+
+                <hr class="divider">
+
+                <div id="pengertian" class="tab-content active">
+                    <h3>Pengertian Kabel UTP</h3>
+                    <p>Kabel UTP adalah singkatan dari <strong>Unshielded Twisted Pair</strong>. Merupakan media transmisi berbasis kabel tembaga yang digunakan untuk membangun jaringan komputer lokal (LAN).</p>
+                    <p>Kabel ini bekerja pada Layer 1 (Physical Layer) model OSI. Disebut "Unshielded" karena kabel ini tidak memiliki pelindung aluminium foil internal, dan disebut "Twisted Pair" karena di dalamnya terdapat 4 pasang kabel kecil (total 8 konduktor) yang saling melilit berpasangan untuk mengurangi interferensi elektromagnetik.</p>
+                </div>
+
+                <div id="spesifikasi" class="tab-content">
+                    <h3>Spesifikasi Umum</h3>
+                    <ul>
+                        <li>Menggunakan konektor standar RJ45 untuk dipasang ke port Switch atau NIC Card.</li>
+                        <li>Memiliki kategori kecepatan (Category), contoh paling umum: Cat5e (hingga 1000 Mbps) dan Cat6 (hingga 10 Gbps pada jarak pendek).</li>
+                        <li>Jarak transmisi maksimal yang disarankan tanpa penguat sinyal adalah 100 meter.</li>
+                        <li>Memiliki susunan urutan warna standar internasional TIA/EIA-568A dan TIA/EIA-568B (Tipe Straight-through atau Crossover).</li>
+                    </ul>
+                </div>
+
+                <div id="keunggulan" class="tab-content">
+                    <h3>Keunggulan Kabel UTP</h3>
+                    <ul>
+                        <li><strong>Fleksibel & Lentur:</strong> Sangat mudah ditekuk dan diarahkan saat melakukan instalasi di dalam ruangan atau pipa paralon dinding.</li>
+                        <li><strong>Harga Ekonomis:</strong> Biaya per meternya jauh lebih murah jika dibandingkan dengan kabel STP atau Fiber Optic.</li>
+                        <li><strong>Instalasi Mudah:</strong> Proses pemotongan dan penyambungan konektor (crimping) sangat sederhana, hanya membutuhkan tang crimping standar.</li>
+                    </ul>
+                </div>
+
+                <div id="aplikasi" class="tab-content">
+                    <h3>Aplikasi / Implementasi Lapangan</h3>
+                    <p>Dalam praktikum dan kebutuhan infrastruktur TKJ, kabel UTP digunakan untuk:</p>
+                    <ul>
+                        <li>Menghubungkan komputer user (Workstation) menuju ke port Switch pembagi di ruangan lab sekolah.</li>
+                        <li>Menyambungkan Access Point indoor ke port LAN utama guna mengalirkan data internet.</li>
+                    </ul>
+                </div>
+
+                <div id="sumber" class="tab-content">
+                    <h3>Sumber Materi</h3>
+                    <ul>
+                        <li>Buku Dasar-Dasar Teknik Jaringan Komputer dan Telekomunikasi Kelas X SMK.</li>
+                        <li>Modul Resmi Praktikum Pengabelan Jaringan Komputer TKJ.</li>
+                    </ul>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
